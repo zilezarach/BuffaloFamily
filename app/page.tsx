@@ -10,7 +10,7 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-white">
+    <div className="relative h-screen w-full bg-cover bg-center" style={{ backgroundImage: "url('/background.gif')" }}>
       <div className="flex flex-col justify-center items-center h-screen">
         <Image src="/Gang_logo.png" alt="logo" width={300} height={300} className="logo" />
         <div className="flex justify-center items-center mt-7">
