@@ -1,27 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { TbBrandSpotify, TbHome, TbBrandYoutube, TbBrandTiktok } from "react-icons/tb";
 import Link from "next/link";
 
 const Navbar = () => {
-  //Dropdown Menu
-  const [dropdown, setDropdown] = useState(false);
-
-  //handle the dropdown if opened
-  const handleDropdown = () => {
-    setDropdown(!dropdown);
-  };
-
-  //if its on mobile
-  const [mobileOpen, setIsMobileOpen] = useState(false);
-
   //Show the navbar in mobile.
-  const handleMobile = () => {
-    setIsMobileOpen(!mobileOpen);
-  };
-
   return (
     //navbar components
     <nav className="navbar">
