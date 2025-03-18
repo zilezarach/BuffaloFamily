@@ -2,8 +2,6 @@
 import React from "react";
 import Slider from "react-slick";
 
-import Image from "next/image";
-
 const images = [{ src: "/204.jpg" }, { src: "/203.jpg" }, { src: "/group home 2.jpg" }, { src: "/group home.jpg" }];
 
 const ImageSlider = () => {
@@ -49,14 +47,7 @@ const ImageSlider = () => {
         {images.map((image, index) => (
           <div key={index}>
             <div className="border-4 border-amber-700 rounded-xl overflow-hidden shadow-md">
-              <img
-                src={image.src}
-                alt="slide"
-                width={150}
-                height={100}
-                className="w-full h-full object-cover"
-                layout="responsive"
-              />
+              <img src={image.src} alt="slide" width={150} height={100} className="w-full h-full object-cover" />
             </div>
           </div>
         ))}
