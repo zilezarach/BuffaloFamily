@@ -5,7 +5,7 @@ import Image from "next/image";
 const images = [
   { src: "/204.jpg" },
   { src: "/203.jpg" },
-  { src: "/group home 1.jpg" },
+  { src: "/group home 2.jpg" },
   { src: "/group home.jpg" },
 ];
 
