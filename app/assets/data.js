@@ -22,7 +22,6 @@ import img21 from "./marvin blue.jpeg";
 import img22 from "./marvin black.jpeg";
 import img23 from "./marvin white.jpeg";
 import img24 from "./Bag.jpeg";
-import { image } from "framer-motion/client";
 let product = [
   {
     id: 1,
