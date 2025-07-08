@@ -16,9 +16,8 @@ import {
   FaYoutube,
   FaInternetExplorer,
 } from "react-icons/fa";
-import { product, sliderModel, albums } from "../assets/data";
+import { product, albums } from "../assets/data";
 import Image from "next/image";
-import { FaY } from "react-icons/fa6";
 
 export default function Shop() {
   const [hoveredProduct, setHoveredProduct] = useState<number | null>(null);
