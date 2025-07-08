@@ -66,13 +66,11 @@ export default function Shop() {
                 <span className="text-lg">Unity</span>
               </div>
             </div>
-
             <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-8 max-w-3xl mx-auto">
-              From Uthiru 22, we're nick-de-brick, mr lazy, and machwani -
+              From Uthiru 22, we&apos;re nick-de-brick, mr lazy, and machwani -
               bringing people together through music and creating entertainment
               for a better tomorrow.
             </p>
-
             <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 text-white font-semibold">
               <span className="mr-2">🌍</span>
               BUFFA TO THE WORLD #nolimits
