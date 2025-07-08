@@ -4,9 +4,10 @@ import Slider from "react-slick";
 import Image from "next/image";
 const images = [
   { src: "/204.jpg" },
-  { src: "/203.jpg" },
-  { src: "/group home 2.jpg" },
-  { src: "/group home.jpg" },
+  { src: "/GroupImg2.jpeg" },
+  { src: "/GroupImg.jpeg" },
+  { src: "/modelBlack.jpg" },
+  { src: "/modelWhite.jpg" },
 ];
 
 const ImageSlider = () => {
@@ -47,17 +48,17 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto my-4">
+    <div className="w-full max-w-6xl mx-auto my-6">
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index}>
-            <div className="border-4 border-amber-700 rounded-xl overflow-hidden shadow-md">
+            <div className="relative w-full h-[28rem] border-4 border-amber-700 rounded-xl overflow-hidden shadow-md">
               <Image
                 src={image.src}
-                alt="slide"
-                width={150}
-                height={100}
-                className="w-full h-full object-cover"
+                alt={`Slide ${index}`}
+                fill
+                priority
+                className="object-contain bg-black"
               />
             </div>
           </div>
