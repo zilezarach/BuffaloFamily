@@ -10,7 +10,7 @@ import {
   TbBrandInstagram,
   TbBrandRumble,
   TbMenu2,
-  TbMenu,
+  TbMenu
 } from "react-icons/tb";
 import Link from "next/link";
 
@@ -26,17 +26,12 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="flex justify-between items-center">
         <div className="logoContain">
-          <Image
-            src="/buffalo_family-.png"
-            alt="logo"
-            width={150}
-            height={10}
-          />
+          <Image src="/buffalo_family-.png" alt="logo" width={150} height={10} />
         </div>
         {/* original links */}
         <ul className="hidden md:flex flex-row font-bold space-x-5 list-none">
           <li className="text-white hover:text-amber-700">
-            <Link href="/">
+            <Link href="/Shop">
               <TbHome className="inline-block" /> Home
             </Link>
           </li>
@@ -66,11 +61,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <button
-          className="md:hidden text-white text-2xl"
-          onClick={toggleMenu}
-          aria-label="Toggle-Menu"
-        >
+        <button className="md:hidden text-white text-2xl" onClick={toggleMenu} aria-label="Toggle-Menu">
           {isOpen ? <TbMenu /> : <TbMenu2 />}
         </button>
       </div>
